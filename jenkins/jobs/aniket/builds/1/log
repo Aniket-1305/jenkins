@@ -1,0 +1,26 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/aniket
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Aniket-1305/jenkins.git
+ > git init /home/coder/project/workspace/jenkins/workspace/aniket # timeout=10
+Fetching upstream changes from https://github.com/Aniket-1305/jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/Aniket-1305/jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Aniket-1305/jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 212f1f0deca5733996a2b725ebbc2daea0b3d3bc (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 212f1f0deca5733996a2b725ebbc2daea0b3d3bc # timeout=10
+Commit message: "Auto-save-commit-10/25/2025--11:44:53-AM"
+First time build. Skipping changelog.
+[aniket] $ /bin/sh -xe /tmp/jenkins5051437605893432578.sh
++ pyhton3 Project something.py
+/tmp/jenkins5051437605893432578.sh: line 2: pyhton3: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
