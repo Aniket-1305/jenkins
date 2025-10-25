@@ -1,0 +1,23 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/aniket
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/coder/project/workspace/jenkins/workspace/aniket/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Aniket-1305/jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/Aniket-1305/jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/Aniket-1305/jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 44ab4e422cd93f1829f6a4ff50fdcbc4aa78e631 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 44ab4e422cd93f1829f6a4ff50fdcbc4aa78e631 # timeout=10
+Commit message: "test"
+ > git rev-list --no-walk 44ab4e422cd93f1829f6a4ff50fdcbc4aa78e631 # timeout=10
+[aniket] $ /bin/sh -xe /tmp/jenkins12309039470588463740.sh
++ pyhton3 Project something.py
+/tmp/jenkins12309039470588463740.sh: line 2: pyhton3: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
